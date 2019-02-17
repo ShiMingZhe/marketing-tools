@@ -1,0 +1,30 @@
+/**index.wxss**/
+.app {
+  margin: 30px;
+}
+.header {
+  width: 100%;
+ margin-top: 30px;
+ font-size: 30px;
+ float: left;
+}
+.title {
+  width: 100%;
+  margin-top: 20px;
+  color: #777c7e;
+  float: left;
+}
+.login {
+  width: 100%;
+  margin-top: 100px;
+  float: left;
+}
+input {
+  border-bottom: 1px solid #9a9d9e;
+  margin-bottom: 30px;
+}
+.button {
+  width: 100%;
+  margin-top: 60px;
+}
+

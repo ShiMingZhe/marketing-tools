@@ -1,0 +1,38 @@
+{
+  "cloud": false,
+  "pages": [
+    "pages/brand/brand",
+    "pages/knowledgePayment/knowledgePayment",
+    "pages/personal/personal",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "木客图书",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor":"#369C72",
+    "backgroundColor":"#F6F6F6",
+    "borderStyle":"white",
+    "list":[{
+      "pagePath":"pages/brand/brand",
+      "text":" 品牌",
+      "iconPath": "images/mine.png",
+      "selectedIconPath": "images/knowledge.png"
+      },{
+        "pagePath": "pages/knowledgePayment/knowledgePayment",
+        "text": " 知识付费",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/knowledge.png"
+      },{
+        "pagePath": "pages/personal/personal",
+        "text": " 我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/knowledge.png"
+      }
+    ]
+  }
+}

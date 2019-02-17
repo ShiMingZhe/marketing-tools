@@ -1,0 +1,14 @@
+<!--pages/brand/brand.wxml-->
+<view class='brand-head'>
+
+</view>
+<view class='brand-tab'>
+  <view class="brand-tab-item {{currentTab==0?'active':''}}" data-current = '0' bindtap='clickTab'>品牌介绍</view>
+  <view class="brand-tab-item {{currentTab==1?'active':''}}" data-current = '1' bindtap='clickTab'>品牌动态</view>
+  <view class="brand-tab-item {{currentTab==2?'active':''}}" data-current = '2' bindtap='clickTab'>产品列表</view>
+</view>
+<swiper current="{{currentTab}}" duration='300' bindchange='swiperTab'>
+  <swiper-item><view>品牌介绍</view></swiper-item>
+  <swiper-item><view>品牌动态</view></swiper-item>
+  <swiper-item><view>产品列表</view></swiper-item>
+</swiper>

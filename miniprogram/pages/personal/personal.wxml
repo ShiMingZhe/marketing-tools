@@ -1,0 +1,10 @@
+<!--pages/personal/personal.wxml-->
+<view class='app'>
+  <view class='product'>
+    <text>商品管理</text>
+  </view>
+  <view class='print'>
+    <text>云打印</text>
+  </view>
+</view>
+

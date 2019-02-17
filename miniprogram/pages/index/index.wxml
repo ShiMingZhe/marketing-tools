@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="app">
+  <view class='header'>
+    <text>您好</text>
+  </view>
+  <view class='title'>
+    <text>欢迎使用图书小程序</text>
+  </view>
+  <form bindsubmit='formSubmit' class='login'>
+    <view>
+      <input type='number' placeholder='请输入手机号或邮箱' name='name' value=''></input>
+    </view>
+    <view>
+      <input password='true' placeholder='请输入密码' name='pwd' value=''></input>
+    </view>
+    <view class='button'>
+    <button type='primary' form-type='submit'>登录</button>
+    </view>
+  </form>
+</view>
