@@ -8,7 +8,7 @@
   </view>
   <form bindsubmit='formSubmit' class='login'>
     <view>
-      <input type='number' placeholder='请输入手机号或邮箱' name='name' value=''></input>
+      <input type='text' placeholder='请输入手机号或邮箱' name='name' value=''></input>
     </view>
     <view>
       <input password='true' placeholder='请输入密码' name='pwd' value=''></input>

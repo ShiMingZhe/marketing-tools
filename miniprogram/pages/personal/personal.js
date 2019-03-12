@@ -1,4 +1,5 @@
 // pages/personal/personal.js
+const app = getApp();
 Page({
 
   /**
@@ -13,22 +14,6 @@ Page({
    */
   onLoad: function (options) {
     
-    /*wx.login({
-      success(res) {
-        if(res.code) {
-          wx.request({
-            url: 'http://mk.mukeen.com/wx/login/'+res.code,
-            method:"GET",
-            success: function(result) {
-              console.log(result)
-            }
-          })
-          console.log(res.code)
-        } else {
-          console.log('登录失败！'+ res.errMsg)
-        }
-      }
-    });*/
   },
 
   /**
@@ -42,11 +27,61 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    /*wx.redirectTo({
-      url: '../index/index',
-    })*/
+    wx.getStorage({
+      key: 'userInfoId',
+      success: function(res) {
+        wx.request({
+          url: app.baseUrl + '/user/info',
+          method: 'post',
+          data: {
+            id: res.data
+          },
+          success: function (res) {
+            if (res.data.code != 0) {
+              wx.redirectTo({
+                url: '../index/index',
+              })
+            }
+          }
+        })
+      },
+    })
   },
 
+  /**
+   * 退出登录
+   */
+  loginOut: function() {
+    wx.getStorage({
+      key: 'userInfoId',
+      success: function(res) {
+        wx.request({
+          url: app.baseUrl + '/login/out',
+          method: 'post',
+          data: {
+            userInfoId: res.data
+          },
+          success: function(result) {
+            wx.redirectTo({
+              url: '../index/index',
+            })
+          }
+        })
+      },
+    })
+  },
+  /**云打印 */
+  cloudePrint: function() {
+    wx.redirectTo({
+      url: '../print/print',
+    })
+  },
+  /**商品管理 */
+  manageProduct: function() {
+    wx.redirectTo({
+      url: '../product/product',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

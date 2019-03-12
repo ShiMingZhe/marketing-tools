@@ -1,3 +1,4 @@
+const app = getApp();
 Page({
 
   /**
@@ -8,9 +9,28 @@ Page({
   },
 
   formSubmit:function(e) {
-    wx.switchTab({
-      url: '../brand/brand',
+    wx.setStorage({
+      key: 'userInfoId',
+      data: e.detail.value.name,
     })
+    
+    wx.request({
+      url: app.baseUrl + '/login',
+      data: {
+        name: e.detail.value.name,
+        password: e.detail.value.pwd,
+        code: ''
+      },
+      method: 'post',
+      success: function (res) {
+        console.log(res)
+        if(res.data.code == 0) {
+          wx.switchTab({
+            url: '../personal/personal',
+          })
+        }
+      }
+      })
   },
   
   /**

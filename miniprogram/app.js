@@ -1,5 +1,6 @@
 //app.js
 App({
+  baseUrl : 'http://localhost:8200',
   onLaunch: function () {
     
     /*if (!wx.cloud) {

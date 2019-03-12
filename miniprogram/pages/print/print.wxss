@@ -1,0 +1,16 @@
+/* pages/print/print.wxss */
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+.footer .search {
+  width: 60%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  margin-left: 20%;
+  background-color: rgb(29, 125, 180);
+  border-radius: 20px;
+}

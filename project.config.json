@@ -11,6 +11,7 @@
 	"appid": "wxab695b09d35da715",
 	"projectname": "marketing-tools",
 	"libVersion": "2.2.5",
+	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,12 +29,20 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户端扫码进入",
+					"pathName": "pages/brand/brand",
+					"query": "code=1",
+					"scene": null
 				}
 			]
 		}

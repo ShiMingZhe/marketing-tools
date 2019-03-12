@@ -4,7 +4,9 @@
     "pages/brand/brand",
     "pages/knowledgePayment/knowledgePayment",
     "pages/personal/personal",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/print/print",
+    "pages/product/product"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
